@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up - WORKWAVE</title>
+    <link rel="stylesheet" href="signup.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat:500"
+    />
+  </head>
+  <body>
+    <div class="signin-container">
+      <a href="landing.htm" class="logo-link">
+        <img
+          class="signin-logo"
+          src="W-removebg-preview.png"
+          alt="Workwave Logo"
+        />
+      </a>
+      <h2>Create Your Account</h2>
+      <form id="signupForm" class="signin-form">
+        <div class="form-group">
+          <label for="newEmail">Email</label>
+          <input type="email" id="newEmail" name="newEmail" required />
+        </div>
+        <div class="form-group">
+          <label for="newPassword">Password</label>
+          <input type="password" id="newPassword" name="newPassword" required />
+        </div>
+        <div class="form-group">
+          <label for="confirmPassword">Confirm Password</label>
+          <input
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            required
+          />
+        </div>
+        <button type="submit" class="signin-button">Sign Up</button>
+      </form>
+    </div>
+
+    <script>
+      // JavaScript for handling sign-up form submission and local storage
+      document
+        .getElementById("signupForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent the default form submission (page reload)
+
+          // Get values from the form fields
+          const email = document.getElementById("newEmail").value;
+          const password = document.getElementById("newPassword").value;
+          const confirmPassword =
+            document.getElementById("confirmPassword").value;
+
+          // Basic validation: Check if passwords match
+          if (password !== confirmPassword) {
+            alert("Passwords do not match! Please try again.");
+            return;
+          }
+
+          // IMPORTANT SECURITY NOTE:
+          // Storing passwords in localStorage in plain text is HIGHLY INSECURE
+          // and should NEVER be done in a production application.
+          // This is for demonstration purposes only.
+
+          // Create a user object
+          const newUser = {
+            email: email,
+            password: password, // Insecure for production!
+          };
+
+          // Retrieve existing users from localStorage, or initialize an empty array if none exist
+          let users = JSON.parse(localStorage.getItem("users")) || [];
+
+          // Check if a user with this email already exists
+          const userExists = users.some((user) => user.email === email);
+          if (userExists) {
+            alert(
+              "An account with this email already exists. Please use a different email."
+            );
+            return;
+          }
+
+          // Add the new user to the users array
+          users.push(newUser);
+
+          // Store the updated users array back into localStorage
+          localStorage.setItem("users", JSON.stringify(users));
+
+          // Inform the user of successful sign-up
+          alert("Sign Up successful!");
+
+          // Redirect the user to the home page after successful signup
+          window.location.href = "home.html";
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,415 @@
+/* Import Montserrat font */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500");
+
+/* Basic reset and body styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #24252a; /* Dark background consistent with sign-in/up */
+  color: #ecf0f1; /* Light text color */
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; /* Stack header, main, footer */
+}
+
+/* Header Styles */
+.home-header {
+  background-color: #1d1f22; /* Slightly darker header, similar to footer */
+  padding: 20px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  flex-wrap: wrap; /* Allow header items to wrap on small screens */
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.home-logo {
+  height: 60px; /* Smaller logo for home page header */
+  width: auto;
+  object-fit: contain;
+}
+
+.welcome-message {
+  font-size: 18px;
+  font-weight: 500;
+  color: #00bcd4; /* Accent color for welcome */
+}
+
+.signout-button {
+  padding: 8px 20px;
+  background-color: rgba(0, 136, 169, 1);
+  color: #ecf0f1;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.signout-button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+/* Main Content Area */
+.main-content {
+  flex-grow: 1; /* Allows main content to take up available space */
+  padding: 40px 5%;
+  max-width: 1200px; /* Max width for content */
+  margin: 0 auto; /* Center main content */
+  width: 100%;
+}
+
+.section-title {
+  font-size: 32px;
+  color: #00bcd4;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+
+/* Search Section */
+.search-section {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 50px;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow search elements to wrap */
+}
+
+#jobSearchInput {
+  flex-grow: 1; /* Allows input to take most space */
+  max-width: 600px; /* Max width for input */
+  padding: 12px 20px;
+  border: 1px solid #444;
+  border-radius: 50px; /* Rounded input */
+  background-color: #3a3f45; /* Input background consistent with sign-in/up */
+  color: #ecf0f1;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+#jobSearchInput::placeholder {
+  color: #aaa;
+}
+
+#jobSearchInput:focus {
+  border-color: #0088a9;
+}
+
+.search-button {
+  padding: 12px 30px;
+  background-color: rgba(
+    0,
+    136,
+    169,
+    1
+  ); /* Button color consistent with sign-in/up */
+  color: #ecf0f1;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+/* Job Listings Container */
+.job-cards-container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Responsive grid */
+  gap: 30px;
+  padding: 20px 0;
+}
+
+.job-card {
+  background-color: #2c2f33; /* Card background consistent with sign-in/up container */
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Push buttons to bottom */
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+}
+
+.job-card h3 {
+  font-size: 22px;
+  color: #00bcd4; /* Accent color for job titles */
+  margin-bottom: 10px;
+}
+
+.job-card .company,
+.job-card .location {
+  font-size: 15px;
+  color: #aaa;
+  margin-bottom: 8px;
+}
+
+.job-card .view-details-button {
+  padding: 10px 15px;
+  background-color: #0088a9; /* Button color consistent with sign-in/up */
+  color: #ecf0f1;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+  width: fit-content; /* Adjust button width to content */
+}
+
+.job-card .view-details-button:hover {
+  background-color: #006b85;
+}
+
+.job-card .save-job-button {
+  padding: 10px 15px;
+  background-color: #4caf50; /* Green for save */
+  color: #ecf0f1;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.job-card .save-job-button.saved {
+  background-color: #28a745; /* Darker green when saved */
+}
+
+.job-card .save-job-button:hover {
+  background-color: #45a049;
+}
+
+.job-card .save-job-button.saved:hover {
+  background-color: #218838;
+}
+
+.no-results-message {
+  text-align: center;
+  font-size: 18px;
+  color: #aaa;
+  margin-top: 30px;
+  grid-column: 1 / -1; /* Span across all columns in grid */
+}
+
+/* Modal Styles (Job Details) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #2c2f33; /* Modal background consistent with sign-in/up container */
+  margin: 5% auto; /* 5% from the top and centered */
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 700px;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: #ecf0f1;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content h3 {
+  color: #00bcd4; /* Accent color for modal title */
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.modal-content p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #ecf0f1;
+}
+
+.modal-content p:last-of-type {
+  margin-bottom: 20px;
+}
+
+.modal-content .modal-button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 15px;
+  margin-top: 20px;
+}
+
+.modal-content .apply-button {
+  background-color: #0088a9;
+  color: #ecf0f1;
+}
+
+.modal-content .apply-button:hover {
+  background-color: #006b85;
+}
+
+.modal-content .save-button {
+  background-color: #4caf50;
+  color: #ecf0f1;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.modal-content .save-button.saved {
+  background-color: #28a745;
+}
+
+.modal-content .save-button:hover {
+  background-color: #45a049;
+}
+
+.modal-content .save-button.saved:hover {
+  background-color: #218838;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .home-header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .header-left {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .home-logo {
+    height: 50px;
+  }
+
+  .welcome-message {
+    font-size: 16px;
+  }
+
+  .main-content {
+    padding: 20px 3%;
+  }
+
+  .search-section {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #jobSearchInput,
+  .search-button {
+    width: 100%;
+    max-width: none;
+  }
+
+  .job-cards-container {
+    grid-template-columns: 1fr; /* Single column on small screens */
+  }
+
+  .modal-content {
+    width: 95%;
+    margin: 10% auto;
+    padding: 20px;
+  }
+
+  .modal-content .modal-button {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+.job-cards-container {
+  display: flex;
+  overflow-x: auto; /* horizontal scroll */
+  gap: 16px;
+  padding: 16px 0;
+}
+
+.job-card {
+  background: #fff;
+  color: #24252a;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  min-width: 280px;
+  max-width: 320px;
+  padding: 20px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s;
+}
+.job-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}

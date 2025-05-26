@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WORKWAVE - Job Listings</title>
+    <link rel="stylesheet" href="home.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat:500"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="home-header">
+      <div class="header-left">
+        <a href="landing.htm" class="logo-link">
+          <img
+            class="home-logo"
+            src="W-removebg-preview.png"
+            alt="Workwave Logo"
+          />
+        </a>
+        <span id="welcomeMessage" class="welcome-message">Welcome, User!</span>
+      </div>
+      <button id="signOutButton" class="signout-button">Sign Out</button>
+    </header>
+
+    <main class="main-content">
+      <section class="search-section">
+        <input
+          type="text"
+          id="jobSearchInput"
+          placeholder="Search for jobs (e.g., Frontend Developer, Marketing Manager)..."
+        />
+        <button id="searchButton" class="search-button">Search</button>
+      </section>
+
+      <section class="job-listings">
+        <h2 class="section-title">Latest Job Listings</h2>
+        <div id="jobList" class="job-cards-container"></div>
+        <div id="jobCardsContainer" class="job-cards-container"></div>
+        <p
+          id="noResultsMessage"
+          class="no-results-message"
+          style="display: none"
+        >
+          No jobs found matching your criteria.
+        </p>
+      </section>
+
+      <section class="saved-jobs-section">
+        <h2 class="section-title">Your Saved Jobs</h2>
+        <div id="savedJobsContainer" class="job-cards-container">
+          <p id="noSavedJobsMessage" class="no-results-message">
+            No jobs saved yet.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <div id="jobDetailsModal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h3 id="modalJobTitle"></h3>
+        <p id="modalJobCompany"></p>
+        <p id="modalJobLocation"></p>
+        <p id="modalJobDescription"></p>
+        <p id="modalJobRequirements"></p>
+        <p id="modalJobSalary"></p>
+        <button id="modalApplyButton" class="modal-button apply-button">
+          Apply Now
+        </button>
+        <button id="modalSaveButton" class="modal-button save-button">
+          <i class="far fa-bookmark"></i> Save Job
+        </button>
+      </div>
+    </div>
+    <script src="jobs.js"></script>
+  </body>
+</html>

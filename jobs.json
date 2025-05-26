@@ -1,0 +1,250 @@
+{
+  "jobs": [
+    {
+      "role": "Software Engineer",
+      "company": "TCS",
+      "location": "Bangalore",
+      "salary": "₹10,00,000"
+    },
+    {
+      "role": "Data Scientist",
+      "company": "Infosys",
+      "location": "Hyderabad",
+      "salary": "₹12,00,000"
+    },
+    {
+      "role": "Marketing Manager",
+      "company": "Reliance Industries",
+      "location": "Mumbai",
+      "salary": "₹15,00,000"
+    },
+    {
+      "role": "HR Executive",
+      "company": "Wipro",
+      "location": "Pune",
+      "salary": "₹8,00,000"
+    },
+    {
+      "role": "Cyber Security Analyst",
+      "company": "HCL Technologies",
+      "location": "Chennai",
+      "salary": "₹11,00,000"
+    },
+    {
+      "role": "Mechanical Engineer",
+      "company": "L&T",
+      "location": "Delhi",
+      "salary": "₹9,50,000"
+    },
+    {
+      "role": "Financial Analyst",
+      "company": "ICICI Bank",
+      "location": "Mumbai",
+      "salary": "₹13,00,000"
+    },
+    {
+      "role": "Graphic Designer",
+      "company": "Zomato",
+      "location": "Gurgaon",
+      "salary": "₹7,50,000"
+    },
+    {
+      "role": "AI Researcher",
+      "company": "Google India",
+      "location": "Bangalore",
+      "salary": "₹20,00,000"
+    },
+    {
+      "role": "Content Writer",
+      "company": "Times of India",
+      "location": "Delhi",
+      "salary": "₹6,00,000"
+    },
+    {
+      "role": "Civil Engineer",
+      "company": "L&T",
+      "location": "Mumbai",
+      "salary": "₹9,00,000"
+    },
+    {
+      "role": "Doctor",
+      "company": "Apollo Hospitals",
+      "location": "Chennai",
+      "salary": "₹18,00,000"
+    },
+    {
+      "role": "Nurse",
+      "company": "Fortis Healthcare",
+      "location": "Delhi",
+      "salary": "₹5,50,000"
+    },
+    {
+      "role": "Pharmacist",
+      "company": "Cipla",
+      "location": "Mumbai",
+      "salary": "₹7,00,000"
+    },
+    {
+      "role": "Teacher",
+      "company": "Delhi Public School",
+      "location": "Delhi",
+      "salary": "₹6,00,000"
+    },
+    {
+      "role": "Professor",
+      "company": "IIT Bombay",
+      "location": "Mumbai",
+      "salary": "₹20,00,000"
+    },
+    {
+      "role": "Lawyer",
+      "company": "Khaitan & Co",
+      "location": "Delhi",
+      "salary": "₹15,00,000"
+    },
+    {
+      "role": "Chartered Accountant",
+      "company": "PwC India",
+      "location": "Mumbai",
+      "salary": "₹14,00,000"
+    },
+    {
+      "role": "Bank Manager",
+      "company": "HDFC Bank",
+      "location": "Pune",
+      "salary": "₹12,00,000"
+    },
+    {
+      "role": "Investment Banker",
+      "company": "Goldman Sachs India",
+      "location": "Mumbai",
+      "salary": "₹25,00,000"
+    },
+    {
+      "role": "Pilot",
+      "company": "IndiGo Airlines",
+      "location": "Delhi",
+      "salary": "₹30,00,000"
+    },
+    {
+      "role": "Cabin Crew",
+      "company": "Air India",
+      "location": "Mumbai",
+      "salary": "₹8,00,000"
+    },
+    {
+      "role": "Chef",
+      "company": "Taj Hotels",
+      "location": "Mumbai",
+      "salary": "₹10,00,000"
+    },
+    {
+      "role": "Hotel Manager",
+      "company": "Oberoi Hotels",
+      "location": "Delhi",
+      "salary": "₹15,00,000"
+    },
+    {
+      "role": "Event Planner",
+      "company": "Wizcraft",
+      "location": "Mumbai",
+      "salary": "₹9,00,000"
+    },
+    {
+      "role": "Fashion Designer",
+      "company": "Manish Malhotra",
+      "location": "Mumbai",
+      "salary": "₹12,00,000"
+    },
+    {
+      "role": "Interior Designer",
+      "company": "Livspace",
+      "location": "Bangalore",
+      "salary": "₹10,00,000"
+    },
+    {
+      "role": "Architect",
+      "company": "Hafeez Contractor",
+      "location": "Mumbai",
+      "salary": "₹15,00,000"
+    },
+    {
+      "role": "Journalist",
+      "company": "NDTV",
+      "location": "Delhi",
+      "salary": "₹8,00,000"
+    },
+    {
+      "role": "Radio Jockey",
+      "company": "Radio Mirchi",
+      "location": "Mumbai",
+      "salary": "₹7,00,000"
+    },
+    {
+      "role": "Actor",
+      "company": "Bollywood",
+      "location": "Mumbai",
+      "salary": "Varies"
+    },
+    {
+      "role": "Singer",
+      "company": "T-Series",
+      "location": "Mumbai",
+      "salary": "Varies"
+    },
+    {
+      "role": "Sports Coach",
+      "company": "BCCI",
+      "location": "Mumbai",
+      "salary": "₹20,00,000"
+    },
+    {
+      "role": "Cricketer",
+      "company": "IPL Teams",
+      "location": "India",
+      "salary": "Varies"
+    },
+    {
+      "role": "Athlete",
+      "company": "Sports Authority of India",
+      "location": "Delhi",
+      "salary": "Varies"
+    },
+    {
+      "role": "Police Officer",
+      "company": "Delhi Police",
+      "location": "Delhi",
+      "salary": "₹7,00,000"
+    },
+    {
+      "role": "Army Officer",
+      "company": "Indian Army",
+      "location": "India",
+      "salary": "₹12,00,000"
+    },
+    {
+      "role": "Scientist",
+      "company": "ISRO",
+      "location": "Bangalore",
+      "salary": "₹18,00,000"
+    },
+    {
+      "role": "Astronomer",
+      "company": "IUCAA",
+      "location": "Pune",
+      "salary": "₹15,00,000"
+    },
+    {
+      "role": "Social Worker",
+      "company": "NGOs",
+      "location": "India",
+      "salary": "₹6,00,000"
+    },
+    {
+      "role": "Entrepreneur",
+      "company": "Startups",
+      "location": "India",
+      "salary": "Varies"
+    }
+  ]
+}
